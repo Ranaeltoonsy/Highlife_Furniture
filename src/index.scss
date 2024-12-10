@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "BioRhyme";
+  src: url("../public/BioRhyme/BioRhyme-VariableFont_wdth\,wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "BioRhyme";
+}
+
+body,
+#root,
+.App {
+  margin-top: 45px;
+  max-width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  align-items: center;
+  background-color: #ffffff;
+  @media screen and (max-width: 1024px) {
+    margin-top: 60px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

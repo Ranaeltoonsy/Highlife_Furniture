@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #1a3d6d;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  .navbar-brand {
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar-toggler {
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+  }
+
+  .navbar-collapse {
+    .nav-link {
+      color: white;
+      margin-right: 1rem;
+      &:hover {
+        color: #ff5e00;
+      }
+    }
+  }
+
+  .searchInput {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    input {
+      width: 100%;
+      padding: 8px 12px 8px 20px;
+      border: 2px solid #fafafa;
+      border-radius: 6px;
+      font-size: 14px;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus {
+      border-color: #007bff;
+    }
+
+    button {
+      margin-left: 8px;
+      background-color: #ff5e00;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      padding: 0.4rem 0.8rem;
+      font-size: 14px;
+
+      &:hover {
+        background-color: #e55300;
+      }
+    }
+  }
+
+  .myAccount {
+    .dropdown-menu {
+      background-color: #fafafa;
+      .dropdown-item:hover {
+        background-color: #a0b1ca;
+      }
+    }
+  }
+
+  .cartShopping {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      color: #ff5e00;
+    }
+    .cart-count {
+      font-size: 0.75rem;
+      min-width: 1.5rem;
+      min-height: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+  }
+}

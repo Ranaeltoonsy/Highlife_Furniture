@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.LogSec{
+  
+  display: flex;
+   align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.3rem;
+    
+    p{
+      text-align: center;
+        font-weight: 800;
+        color: #1a3d6d;
+    }
+    h3{
+        
+        margin-top: 16px;
+    }
+    h6{
+        margin-top: 4px;
+    }
+    .email{
+        margin-right: 2%;
+        margin-top: 12px;
+        border: 2px solid #1a3d6d;
+        border-radius: 4px;
+    }
+    .password{
+        margin-right: 2%;
+        margin-top: 12px;
+        border: 2px solid #1a3d6d;
+        border-radius: 4px;
+    }
+    .continue{
+      
+        margin-right: 2%;
+        border: 2px solid #1a3d6d;
+        border-radius: 4px;
+        background-color: #1a3d6d;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 12px;
+    }
+    .arrow{
+      
+        color: #877e7e;
+    }
+    .google{
+        margin-right: 2%;
+        border: 2px solid #fff;
+        border-radius: 4px;
+        background-color: #fff;
+        color: #877e7e;
+        cursor: pointer;
+        position: relative;
+    }
+    .Google{
+        position: absolute;
+        margin-left: 12%;
+        margin-top: 10px;
+        z-index: 10;
+    }
+    .faceBook{
+        margin-left: 2%;
+        cursor: pointer;
+        border: 2px solid #fff;
+        border-radius: 4px;
+        background-color: #fff;
+        color: #877e7e;
+        position: relative;
+    }
+    .FaceBook{
+        position: absolute;
+        margin-left: 14%;
+        margin-top: 10px;
+        z-index: 10;
+    }
+    .apple{
+        margin-left: 2%;
+        cursor: pointer;
+        border: 2px solid #fff;
+        border-radius: 4px;
+        background-color: #fff;
+        color: #877e7e;
+        position: relative;
+    }
+    .Apple{
+        position: absolute;
+        margin-left: 12%;
+        margin-top: 10px;
+        z-index: 10;
+    }
+}

@@ -1,0 +1,93 @@
+#HeroSection {
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-color: white;
+    color: #858585;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 2s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    background-color: white;
+    opacity: 0.8;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+      top: -50px;
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #e78b40;
+    height: 10px;
+    width: 40px;
+    border-radius: 100px;
+    opacity: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition-duration: 0.7s;
+    @media (max-width: 768px) {
+      height: 10px;
+      width: 30px;
+    }
+  }
+
+  .slide-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .slide-content {
+    max-width: 90%;
+    padding: 20px;
+    font-size: 64px;
+    background-color: #85858500;
+    .offer-text {
+      font-size: 64px;
+      font-weight: 700;
+      color: white;
+
+      @media (max-width: 768px) {
+        font-size: 18px;
+      }
+    }
+
+    .title-text {
+      font-size: 64px;
+      font-weight: 700;
+
+      @media (max-width: 768px) {
+        font-size: 32px;
+        line-height: 1.2;
+      }
+
+      .delivery-text {
+        font-size: 64px;
+
+        @media (max-width: 768px) {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

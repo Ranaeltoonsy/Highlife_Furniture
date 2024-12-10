@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Signsec {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  h1 {
+    text-align: center;
+    font-weight: 800;
+    color: #1a3d6d;
+  }
+
+  h3 {
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  h6 {
+    text-align: center;
+    margin-top: 4px;
+  }
+
+  .firstName,
+  .secondName,
+  .password,
+  .confirmPassword {
+    margin-left: 34%;
+    border: 2px solid #1a3d6d;
+    border-radius: 4px;
+  }
+
+  .phoneNumber {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    .egyptCode {
+      margin-left: 34%;
+      border: 2px solid #1a3d6d;
+      border-radius: 4px;
+    }
+
+    .number {
+      border: 2px solid #1a3d6d;
+      border-radius: 4px;
+    }
+  }
+
+  .createAccount {
+    margin-left: 34%;
+    border: 2px solid #1a3d6d;
+    border-radius: 4px;
+    background-color: #1a3d6d;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+
+  .arrow {
+    margin-left: -40px;
+    color: #877e7e;
+  }
+}
