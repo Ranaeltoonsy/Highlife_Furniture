@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-
 export default function CardsSection({ products }) {
   const navigate = useNavigate([]);
 
