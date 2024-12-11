@@ -47,7 +47,7 @@ export default function AddToCart({ products }) {
               return (
                 <div
                   key={el.id}
-                  className="col-12 d-flex flex-wrap gap-3 justify-content-center"
+                  className="Details col-12 d-flex flex-wrap gap-3"
                 >
                   <div className="ProductImage col-12 col-md-6 col-lg-3">
                     <img
@@ -123,11 +123,11 @@ export default function AddToCart({ products }) {
                           </div>
                         </div>
 
-                        <div class="bar-container">
-                          <div class="bar bar-5"></div>
-                          <div class="bar bar-4"></div>
-                          <div class="bar bar-2"></div>
-                          <div class="bar bar-3"></div>
+                        <div className="bar-container">
+                          <div className="bar bar-5"></div>
+                          <div className="bar bar-4"></div>
+                          <div className="bar bar-2"></div>
+                          <div className="bar bar-3"></div>
                         </div>
                       </div>
                       <div className="Review d-flex flex-column">

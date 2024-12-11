@@ -268,7 +268,7 @@ export default function Cart() {
             <div className="col-12">
               <h2 className="bg-white p-3 "> Choose Your Payment Method </h2>
               <select
-                className="form-select mb-3"
+                className="form-select mb-3 bg-body-tertiary"
                 onChange={(e) => setPaymentMethod(e.target.value)}
               >
                 <option value="">Select a payment method</option>

@@ -93,6 +93,39 @@
     .stars {
       display: flex;
       gap: 0.2rem;
+      color: yellow;
+    }
+  }
+
+  .bar-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 120px;
+
+    .bar {
+      height: 12px;
+      border-radius: 5px;
+      background-color: #ccc;
+    }
+
+    .bar-5 {
+      width: 100%;
+      background-color: black;
+    }
+
+    .bar-4 {
+      width: 80%;
+      background-color: black;
+    }
+
+    .bar-2 {
+      width: 40%;
+      background-color: black;
+    }
+    .bar-3 {
+      width: 60%;
+      background-color: black;
     }
   }
 
@@ -130,36 +163,4 @@
       margin: 0;
     }
   }
-}
-
-.bar-container {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: 120px;
-}
-
-.bar {
-  height: 12px;
-  border-radius: 5px;
-  background-color: #ccc;
-}
-
-.bar-5 {
-  width: 100%;
-  background-color: black;
-}
-
-.bar-4 {
-  width: 80%;
-  background-color: black;
-}
-
-.bar-2 {
-  width: 40%;
-  background-color: black;
-}
-.bar-3 {
-  width: 60%;
-  background-color: black;
 }

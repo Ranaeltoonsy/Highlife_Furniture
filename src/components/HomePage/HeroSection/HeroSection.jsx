@@ -13,7 +13,6 @@ import {
 } from "swiper/modules";
 import axios from "axios";
 import { useEffect, useState } from "react";
-
 export default function HeroSection() {
   const [HeroSlider, setHeroSlider] = useState([]);
 

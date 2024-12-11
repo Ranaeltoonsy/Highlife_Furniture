@@ -126,16 +126,15 @@ export default function Header() {
           </form>
 
              
-          <div className="cartShopping position-relative">
-            <FontAwesomeIcon icon={faCartShopping} onClick={()=> navigate(`/CartPage`)}/>
-            
+          <div className="cartShopping gap-3 ">
             {totalItems > 0 && (
-        <span className="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        <span className="cart-count position-absolute translate-middle badge rounded-pill bg-danger">
           {totalItems} 
         </span>
-            )}
+          )}
+            <FontAwesomeIcon icon={faCartShopping} className="position-relative" onClick={()=> navigate(`/CartPage`)}/>
+            
           </div>
-
          
           <li className="nav-item dropdown d-flex myAccount">
             <span

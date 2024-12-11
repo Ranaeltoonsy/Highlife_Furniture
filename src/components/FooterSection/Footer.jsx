@@ -17,7 +17,7 @@ export default function Footer() {
     <>
       <footer>
         <div className="container">
-          <div className="row g-2 mt-3">
+          <div className="row mt-3">
             <div className="col-sm-12 col-md-3">
               <div className="d-flex flex-column">
                 <p>Company</p>
@@ -75,7 +75,7 @@ export default function Footer() {
                     </span>
                     <span>
                       <FontAwesomeIcon
-                        className="fs-2"
+                        className="fs-2 ins"
                         icon={faSquareInstagram}
                       />
                     </span>
@@ -93,8 +93,8 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="col-sm-12 col-md-3">
-              <div className=" d-flex flex-column">
+            <div className="col-sm-12 col-md-3 mt-1">
+              <div className=" d-flex flex-column ms-1">
                 <p>Location</p>
                 <ul className="locations list-unstyled text-decoration-underline">
                   <li>
@@ -107,7 +107,7 @@ export default function Footer() {
                   </li>
                   <li>
                     {" "}
-                    <FontAwesomeIcon icon={faLocationDot} /> Mansoura,Dakahlia
+                    <FontAwesomeIcon icon={faLocationDot} /> Mansoura
                   </li>
                   <li>
                     {" "}
@@ -115,11 +115,11 @@ export default function Footer() {
                   </li>
                   <li>
                     {" "}
-                    <FontAwesomeIcon icon={faLocationDot} /> Alameen,North Cost
+                    <FontAwesomeIcon icon={faLocationDot} /> Alameen
                   </li>
                   <li>
                     {" "}
-                    <FontAwesomeIcon icon={faLocationDot} /> Marassi,North Cost
+                    <FontAwesomeIcon icon={faLocationDot} /> Marassi
                   </li>
                 </ul>
               </div>

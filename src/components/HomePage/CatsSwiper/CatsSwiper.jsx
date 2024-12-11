@@ -33,21 +33,20 @@ export default function CatsSwiper() {
           {error && <p className="text-danger text-center">{error}</p>}
           <Swiper
             slidesPerView={1}
-            spaceBetween={10}
             pagination={{
               clickable: true,
             }}
             breakpoints={{
-              640: { slidesPerView: 2, spaceBetween: 20 },
+              640: { slidesPerView: 2, spaceBetween: 10 },
               768: { slidesPerView: 2, spaceBetween: 30 },
-              1024: { slidesPerView: 3, spaceBetween: 50 },
-              1044: { slidesPerView: 4, spaceBetween: 50 },
+              1024: { slidesPerView: 3, spaceBetween: 70 },
+              1044: { slidesPerView: 4, spaceBetween: 60 },
             }}
             className="mySwiper"
           >
             {CatsSwiper.map((el) => (
               <SwiperSlide className="mt-4" key={el.id}>
-                <div className="card" style={{ width: "19rem" }}>
+                <div className="card" style={{ width: "21rem" }}>
                   <img
                     src={`http://localhost:1337${
                       el.product_image?.url || defaultImage
@@ -72,8 +71,8 @@ export default function CatsSwiper() {
                         </p>
                       )}
                     </div>
-                    <div className="d-flex flex-row align-items-center justify-content-between">
-                      <p className="card-text">
+                    <div className="d-flex flex-row align-items-center text-center gap-2">
+                      <p className="card-text mt-2">
                         {el.Demand || "No demand info"}
                       </p>
                       <button className="btn btn-success w-50">
