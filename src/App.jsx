@@ -1,5 +1,6 @@
 import Header from "./components/HeaderSection/Header.jsx";
 import Footer from "./components/FooterSection/Footer.jsx";
+import "animate.css"
 import { Outlet } from "react-router-dom"; 
 import React, { useRef } from "react";
 import Loader from "./components/Loader/Loader.jsx";
@@ -15,7 +16,7 @@ export default function App() {
   
       return () => clearTimeout(timer);
     }else {
-      setShowLoader(false); // Ensure loader stays hidden on navigation
+      setShowLoader(false);
     }
   }, []);
   if (showLoader) {
@@ -24,7 +25,7 @@ export default function App() {
     );
   }
   return (
-    <div className="App">
+    <div className="App animate__animated animate__fadeIn">
         <Header />
       <main>
         <Outlet />

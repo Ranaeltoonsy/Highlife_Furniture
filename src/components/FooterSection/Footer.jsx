@@ -6,6 +6,7 @@ import {
   faSquareFacebook,
   faSquareInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import "animate.css"
 import "../FooterSection/Footer.scss";
 import "@fortawesome/free-solid-svg-icons";
 import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
@@ -16,7 +17,7 @@ export default function Footer() {
   return (
     <>
       <footer>
-        <div className="container">
+        <div className="container animate__animated animate__fadeIn">
           <div className="row mt-3">
             <div className="col-sm-12 col-md-3">
               <div className="d-flex flex-column">

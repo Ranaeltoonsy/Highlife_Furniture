@@ -103,7 +103,7 @@ export default function Cart() {
                     >
                       Remove
                     </button>
-                    <div className="d-flex">
+                    <div className="d-flex align-items-center">
                       <button
                         onClick={() => updateQuantity(el.id, -1)}
                         className="btn btn-outline-secondary"

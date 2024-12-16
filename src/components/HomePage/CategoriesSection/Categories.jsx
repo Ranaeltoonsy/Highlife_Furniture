@@ -1,4 +1,5 @@
 import axios from "axios";
+import "animate.css"
 import { useEffect, useState } from "react";
 import "./Categories.scss";
 export default function Categories() {
@@ -20,7 +21,7 @@ export default function Categories() {
   }, []);
 
   return (
-    <div className="container mt-5 px-0">
+    <div className="container animate__animated animate__fadeIn mt-5 px-0">
       <div className="row mx-0 g-3">
         <h2 className="col-12">Furnish your home</h2>
         {CatsSection.map((el) => (

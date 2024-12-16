@@ -1,4 +1,5 @@
 import "./HeroSection.scss";
+import "animate.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -32,7 +33,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <div className="container px-0" id="HeroSection">
+    <div className="container animate__animated animate__fadeIn px-0" id="HeroSection">
       <div className="row mx-0">
         <div className="col-12 px-0">
           <Swiper

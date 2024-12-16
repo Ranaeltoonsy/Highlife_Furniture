@@ -33,14 +33,15 @@ export default function CatsSwiper() {
           {error && <p className="text-danger text-center">{error}</p>}
           <Swiper
             slidesPerView={1}
+            spaceBetween={20}
             pagination={{
               clickable: true,
             }}
             breakpoints={{
               640: { slidesPerView: 2, spaceBetween: 10 },
-              768: { slidesPerView: 2, spaceBetween: 30 },
-              1024: { slidesPerView: 3, spaceBetween: 70 },
-              1044: { slidesPerView: 4, spaceBetween: 60 },
+              768: { slidesPerView: 2, spaceBetween: 10 },
+              1024: { slidesPerView: 3, spaceBetween: 90 },
+              1044: { slidesPerView: 4, spaceBetween: 90 },
             }}
             className="mySwiper"
           >

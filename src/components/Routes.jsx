@@ -9,8 +9,6 @@ import RoomSetsPage from "../pages/RoomSetsPage/RoomSetsPage.jsx";
 import BabyKidsPage from "../pages/BabyKidsPage/BabyKidsPage.jsx";
 import Page404 from "../pages/Page404/Page404.jsx";
 import NoHeaderFooterLayout from "../components/NoHeaderFooterLayout.jsx";
-import LogInPage from "../components/LogIn/LogInPage.jsx";
-import SignUpPage from "../components/Register/SignUpPage.jsx";
 import AddToCartPage from "../pages/AddToCartPage/AddToCartPage.jsx";
 import CartPage from "../pages/CartPage/CartPage.jsx";
 const router = createBrowserRouter([
@@ -60,8 +58,6 @@ const router = createBrowserRouter([
     path: "/",
     element: <NoHeaderFooterLayout />,
     children: [
-      { path: "/LogInPage", element: <LogInPage /> },
-      { path: "/SignUpPage", element: <SignUpPage /> },
       {
         path: "*",
         element: <Page404 />,

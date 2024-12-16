@@ -2,21 +2,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./AddToCart.scss";
 import {
   faCircleUser,
-  faHeart,
   faStarHalfStroke,
 } from "@fortawesome/free-regular-svg-icons";
 import {
-  faHeart as faHeartSolid,
   faShop,
   faStar,
   faTruck,
 } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
 import { useCart } from "../CartContext";
 
 export default function AddToCart({ products }) {
   const { cartProducts, setCartProducts } = useCart();
-  const [favoriteProducts, setFavoriteProducts] = useState("");
 
   const toggleCartProduct = (product) => {
     setCartProducts((prev) => {
@@ -29,11 +25,6 @@ export default function AddToCart({ products }) {
     });
   };
 
-  const toggleFavorite = (id) => {
-    setFavoriteProducts((prev) =>
-      prev.includes(id) ? prev.filter((favId) => favId !== id) : [...prev, id]
-    );
-  };
 
   return (
     <section className="ProductDetails">
@@ -93,17 +84,7 @@ export default function AddToCart({ products }) {
                           ? "Remove from Cart"
                           : "Add to Cart"}
                       </button>
-                      <FontAwesomeIcon
-                        icon={
-                          favoriteProducts.includes(el.id)
-                            ? faHeartSolid
-                            : faHeart
-                        }
-                        className={`AddToFav ${
-                          favoriteProducts.includes(el.id) ? "active" : ""
-                        }`}
-                        onClick={() => toggleFavorite(el.id)}
-                      />
+                    
                     </div>
                   </div>
 
