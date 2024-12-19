@@ -19,7 +19,7 @@ export default function Footer() {
       <footer>
         <div className="container animate__animated animate__fadeIn">
           <div className="row mt-3">
-            <div className="col-sm-12 col-md-3">
+            <div className="col-sm-12 col-md-3 mt-1">
               <div className="d-flex flex-column">
                 <p>Company</p>
                 <ul className="list-unstyled">
@@ -44,7 +44,7 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="col-sm-12 col-md-3">
+            <div className="col-sm-12 col-md-3 mt-1">
               <div className=" d-flex flex-column">
                 <p>Important Links</p>
                 <ul className="list-unstyled">
@@ -58,12 +58,12 @@ export default function Footer() {
               </div>
             </div>
 
-            <div className="col-sm-12 col-md-3">
+            <div className="col-sm-12 col-md-3 mt-1">
               <div className=" d-flex flex-column">
                 <p>Need Help</p>
                 <p className="d-flex gap-2 align-items-center">
                   <FontAwesomeIcon icon={faEnvelope} />
-                  Hello&#64;HighLife.com
+                  Hi@HighLife.com
                 </p>
                 <div className="followUs">
                   <p>Follow Us</p>
@@ -95,7 +95,7 @@ export default function Footer() {
             </div>
 
             <div className="col-sm-12 col-md-3 mt-1">
-              <div className=" d-flex flex-column ms-1">
+              <div className=" d-flex flex-column">
                 <p>Location</p>
                 <ul className="locations list-unstyled text-decoration-underline">
                   <li>

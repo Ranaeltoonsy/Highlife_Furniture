@@ -52,9 +52,7 @@ export default function Cart() {
     total: total + 50,
     timestamp: new Date().toISOString(),
   };
-
-  localStorage.setItem("checkoutData", JSON.stringify(checkoutData));
-
+  
   const handleCheckout = () => {
     if (!selectedAddress || !paymentMethod) {
       alert("Please select an address and a payment method.");
@@ -62,8 +60,12 @@ export default function Cart() {
     }
     setIsCheckoutComplete(true);
     setShowAlert(true);
+    localStorage.setItem("checkoutData", JSON.stringify(checkoutData));
 
     setTimeout(() => setShowAlert(false), 4000);
+    setTimeout(() => {
+      setCartProducts([]);
+    }, 2000);
   };
 
   return (
@@ -174,7 +176,7 @@ export default function Cart() {
 
                       <div className="mb-3 d-flex gap-2">
                         <input
-                          type="text"
+                          type="number"
                           name="building"
                           id="building"
                           className="form-control"
@@ -183,7 +185,7 @@ export default function Cart() {
                         />
 
                         <input
-                          type="text"
+                          type="number"
                           name="floor"
                           id="floor"
                           className="form-control"
@@ -191,7 +193,7 @@ export default function Cart() {
                           required
                         />
                         <input
-                          type="text"
+                          type="number"
                           name="apartment"
                           id="apartment"
                           className="form-control"
@@ -247,9 +249,9 @@ export default function Cart() {
 
                       <div className="mb-3 d-flex gap-2">
                         <input type="radio" name="adtype" id="home" />
-                        <label for="home"> Home </label>
+                        <label htmlFor="home"> Home </label>
                         <input type="radio" name="adtype" id="work" />
-                        <label for="work"> Work </label>
+                        <label htmlFor="work"> Work </label>
                       </div>
                       <div className="text-end">
                         <button

@@ -1,11 +1,11 @@
-import React, { createContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect } from "react";
 import axios from "axios";
 
 export const AdSectionContext = createContext();
 
 export const AdSectionProvider = ({ children }) => {
   const [ads, setAds] = useState([]);
-  const [category, setCategory] = useState("");
+  const [category, setCategory] = useState("beds");
 
   const fetchAds = (selectedCategory) => {
     axios

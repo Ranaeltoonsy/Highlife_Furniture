@@ -48,7 +48,7 @@ export default function AddToCart({ products }) {
                     />
                   </div>
 
-                  <div className="col-12 col-md-6 col-lg-9 mt-3">
+                  <div className="col-12 col-md-6 col-lg-8 mt-3">
                     <h2>{el.product_name}</h2>
                     <div className="d-flex flex-row gap-3">
                       <h4 className="card-text">EGP {el.product_price}</h4>
