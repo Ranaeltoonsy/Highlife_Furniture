@@ -4,11 +4,7 @@ import {
   faCircleUser,
   faStarHalfStroke,
 } from "@fortawesome/free-regular-svg-icons";
-import {
-  faShop,
-  faStar,
-  faTruck,
-} from "@fortawesome/free-solid-svg-icons";
+import { faShop, faStar, faTruck } from "@fortawesome/free-solid-svg-icons";
 import { useCart } from "../CartContext";
 
 export default function AddToCart({ products }) {
@@ -24,7 +20,6 @@ export default function AddToCart({ products }) {
       return [...prev, { ...product, quantity: 1 }];
     });
   };
-
 
   return (
     <section className="ProductDetails">
@@ -84,7 +79,6 @@ export default function AddToCart({ products }) {
                           ? "Remove from Cart"
                           : "Add to Cart"}
                       </button>
-                    
                     </div>
                   </div>
 

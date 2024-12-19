@@ -1,5 +1,5 @@
 import axios from "axios";
-import "animate.css"
+import "animate.css";
 import { useEffect, useState } from "react";
 import "./Categories.scss";
 export default function Categories() {

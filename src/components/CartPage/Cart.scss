@@ -1,10 +1,10 @@
-.container{
+.container {
   .productImage {
     width: 100px;
     height: 100px;
     object-fit: cover;
   }
-  
+
   .modal-overlay {
     position: fixed;
     top: 0;
@@ -13,8 +13,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1050;
- 
- 
+
     .modal-content {
       width: 100%;
       max-width: 500px;
@@ -24,11 +23,9 @@
       padding: 20px;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
-    
+
     .saveButton {
       background-color: #1a3d6d;
     }
   }
-  
-  
 }

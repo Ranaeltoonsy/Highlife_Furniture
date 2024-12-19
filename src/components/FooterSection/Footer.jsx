@@ -6,7 +6,7 @@ import {
   faSquareFacebook,
   faSquareInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import "animate.css"
+import "animate.css";
 import "../FooterSection/Footer.scss";
 import "@fortawesome/free-solid-svg-icons";
 import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";

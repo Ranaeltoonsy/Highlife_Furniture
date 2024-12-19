@@ -20,13 +20,13 @@
 
   .navbar-collapse {
     justify-content: flex-end;
-   .navbar-nav{
-    @media screen and (min-width: 1024px) {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
+    .navbar-nav {
+      @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
     }
-   }
     .nav-link {
       color: white;
       margin-right: 1rem;

@@ -52,7 +52,7 @@ export default function Cart() {
     total: total + 50,
     timestamp: new Date().toISOString(),
   };
-  
+
   const handleCheckout = () => {
     if (!selectedAddress || !paymentMethod) {
       alert("Please select an address and a payment method.");
